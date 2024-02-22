@@ -1,0 +1,17 @@
+@import url("./styles/navbar.css");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+
+:root {
+    --background-color: #C4C4C4;
+    --second-color: #FFFFFF;
+    --third-color: #002F52;
+    --titles-buttons-color: #EB9B00;
+    --navbarMenu-firstFrame-lastFrame-color: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
+    --font: "Poppins", sans-serif;
+    --font-bold: 700;
+    --font-regular: 400;
+}
+
+body {
+    background-color: var(--background-color);
+}

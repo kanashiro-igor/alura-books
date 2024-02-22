@@ -1,0 +1,65 @@
+.navbar {
+    background-color: var(--second-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.container__button {
+    display: none;
+}
+
+.container__button:checked ~ .menu__list {
+    display: block;
+}
+
+.navbar__menu {
+    width: 24px;
+    height: 24px;
+    background-image: url("../img/menu.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+}
+
+.navbar__image {
+    width: 40px;
+    height: 40px;
+    padding: 1em;
+}
+
+.menu__list {
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 60vw;
+}
+
+.list__title {
+    color: var(--titles-buttons-color);
+    font-family: var(--font);
+    font-weight: var(--font-bold);
+    font-style: normal;
+}
+
+.list__title, .list__item {
+    padding: 1em;
+    background-color: var(--second-color);
+}
+
+.item__link {
+    background: var(--navbarMenu-firstFrame-lastFrame-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-transform: uppercase;
+    font-family: var(--font);
+    font-weight: var(--font-regular);
+    font-style: normal;
+}
