@@ -2,6 +2,8 @@
 
 HTML and CSS: responsiveness with mobile-first
 
+Alura Course
+
 Figma project:
 
 https://www.figma.com/file/Zob0OFh9ydF5QarCc3uEag/AluraBooks
