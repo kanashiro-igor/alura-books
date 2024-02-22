@@ -5,3 +5,7 @@ HTML and CSS: responsiveness with mobile-first
 Figma project:
 
 https://www.figma.com/file/Zob0OFh9ydF5QarCc3uEag/AluraBooks
+
+Check this project here:
+
+https://kanashiro-igor.github.io/alura-books/
