@@ -43,7 +43,6 @@
 
 .list__title {
     color: var(--titles-buttons-color);
-    font-family: var(--font);
     font-weight: var(--font-bold);
     font-style: normal;
 }
@@ -59,7 +58,43 @@
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-transform: uppercase;
-    font-family: var(--font);
     font-weight: var(--font-regular);
     font-style: normal;
+}
+
+.banner {
+    background-color: var(--third-color);
+    color: var(--second-color);
+    text-align: center;
+    padding: 2em 1.5em;
+}
+
+.banner__title {
+    font-size: 18px;
+    font-weight: var(--font-bold);
+    margin: 0 1em;
+}
+
+.banner__text {
+    font-weight: var(--font-medium);
+    margin: 1em 1em;
+    line-height: 1.5em;
+}
+
+.banner__search {
+    border: 1px solid var(--second-color);
+    text-align: center;
+    border-radius: 2em;
+    background-color: transparent;
+    width: 100%;
+    padding: 1em 0;
+}
+
+.banner__search::placeholder {
+    font-size: 14px;
+    font-weight: var(--font-regular);
+    background-image: url("../img/search.png");
+    background-repeat: no-repeat;
+    background-position: 1em;
+    color: var(--second-color);
 }
