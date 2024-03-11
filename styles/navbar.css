@@ -72,6 +72,7 @@
 .banner__title {
     font-size: 18px;
     font-weight: var(--font-bold);
+    line-height: auto;
     margin: 0 1em;
 }
 

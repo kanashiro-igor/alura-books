@@ -5,8 +5,11 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>AluraBooks</title>
+        <!--Reset File-->
         <link rel="stylesheet" href="./styles/reset.css">
+        <!--Swiper CSS-->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+        <!--Main CSS-->
         <link rel="stylesheet" href="./styles/styles.css">
     </head>
 
@@ -34,22 +37,22 @@
                     <li class="list__item">
                         <a href="#" class="item__link">Design & UX</a>
                     </li>
-                </ul>
+                </ul> <!--end menu__list-->
                 <img src="./img/logo.png" alt="Alurabooks logo" class="navbar__image">
-            </div>
+            </div> <!--end container-->
             <div class="container">
                 <a href="#"><img src="./img/bookmarks.png" alt="Bookmarks logo" class="navbar__image"></a>
                 <a href="#"><img src="./img/shopping.png" alt="Shopping cart logo" class="navbar__image"></a>
                 <a href="#"><img src="./img/user.png" alt="My profile logo" class="navbar__image"></a>
-            </div>
-        </header>
+            </div> <!--end container-->
+        </header> <!--end navbar-->
         <section class="banner">
             <h2 class="banner__title">Do you already know where to start?</h2>
             <p class="banner__text">Find what you need for your development on our shelf!</p>
             <input type="text" class="banner__search" placeholder="What will be your next read?">
-        </section>
-        <section class="books-section">
-            <h2 class="books-title">Latest Releases</h2>
+        </section> <!--end banner-->
+        <section class="latest-releases__section">
+            <h2 class="latest-releases__title">Latest Releases</h2>
             <!-- Slider main container -->
             <div class="swiper">
                 <!-- If we need pagination -->
@@ -86,38 +89,27 @@
                 <!-- If we need navigation buttons -->
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-button-next"></div>
-            
-                <!-- If we need scrollbar -->
-                <div class="swiper-scrollbar"></div>
-            </div>
+            </div> <!--end swiper-->
             <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-            <script>
-                const swiper = new Swiper('.swiper', {
-                    // Optional parameters
-                    spaceBetween: 10,
-                    slidesPerView: 1.5,
-                    centeredSlides: 'true',
+            <script src="./js/app.js"></script>
 
-                    // If we need pagination
-                    pagination: {
-                        el: '.swiper-pagination',
-                        type: 'bullets',
-                    },
-
-                    // Navigation arrows
-                    navigation: {
-                        nextEl: '.swiper-button-next',
-                        prevEl: '.swiper-button-prev',
-                    },
-
-                    keyboard: {
-                        enabled: true,
-                        onlyInViewport: false,
-                    },
-                });
-            </script>
-
-        </section>
+            <div class="card">
+                <div class="card__left">
+                    <h3 class="card__subtitle">You might also be interested in…</h3>
+                    <h2 class="card__title">Angular 11 and Firebase</h2>
+                    <p class="card__text">Building an application integrated with the Google platform.</p>
+                    <div>
+                        <img src="./img/bookmarks.png" alt="Bookmarks logo">
+                        <img src="./img/shopping.png" alt="Shopping cart logo">
+                    </div>
+                </div> <!--end card__left-->
+                <div class="card__right">
+                    <img src="./img/angularIcon.svg" alt="Angular logo">
+                    <a href="#" class="card__button">Know more</a>
+                </div>
+            </div><!--end card-->
+        </section> <!--end latest-releases__section-->
+        
     </body>
 
 </html>
