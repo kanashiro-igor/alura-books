@@ -5,8 +5,9 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>AluraBooks</title>
-        <link rel="stylesheet" href="./reset.css">
-        <link rel="stylesheet" href="./styles.css">
+        <link rel="stylesheet" href="./styles/reset.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+        <link rel="stylesheet" href="./styles/styles.css">
     </head>
 
     <body>
@@ -46,6 +47,76 @@
             <h2 class="banner__title">Do you already know where to start?</h2>
             <p class="banner__text">Find what you need for your development on our shelf!</p>
             <input type="text" class="banner__search" placeholder="What will be your next read?">
+        </section>
+        <section class="books-section">
+            <h2 class="books-title">Latest Releases</h2>
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <img src="./img/apacheKafka.svg" alt="Book about Apache Kafka and Spring Boot." loading="lazy">
+                        <div class="swiper-lazy-preloader"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/leadership.svg" alt="Book about leadership in design." loading="lazy">
+                        <div class="swiper-lazy-preloader"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/javascript.svg" alt="Book about Javascript." loading="lazy">
+                        <div class="swiper-lazy-preloader"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/acessibility.svg" alt="Book about acessibility." loading="lazy">
+                        <div class="swiper-lazy-preloader"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/agileMetrics.svg" alt="Book about Agile Metrics." loading="lazy">
+                        <div class="swiper-lazy-preloader"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/angular.svg" alt="Book about Angular." loading="lazy">
+                        <div class="swiper-lazy-preloader"></div>
+                    </div>
+                    </div>
+            
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            
+                <!-- If we need scrollbar -->
+                <div class="swiper-scrollbar"></div>
+            </div>
+            <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+            <script>
+                const swiper = new Swiper('.swiper', {
+                    // Optional parameters
+                    spaceBetween: 10,
+                    slidesPerView: 1.5,
+                    centeredSlides: 'true',
+
+                    // If we need pagination
+                    pagination: {
+                        el: '.swiper-pagination',
+                        type: 'bullets',
+                    },
+
+                    // Navigation arrows
+                    navigation: {
+                        nextEl: '.swiper-button-next',
+                        prevEl: '.swiper-button-prev',
+                    },
+
+                    keyboard: {
+                        enabled: true,
+                        onlyInViewport: false,
+                    },
+                });
+            </script>
+
         </section>
     </body>
 

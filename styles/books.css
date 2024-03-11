@@ -1,0 +1,26 @@
+.books-title {
+    color: var(--titles-buttons-color);
+    font-family: var(--font);
+    font-weight: var(--font-bold);
+    text-transform: uppercase;
+    text-align: center;
+    background-color: var(--second-color);
+    padding: 1em 0 0.5em 0;
+    font-size: 18px;
+}
+
+.swiper-pagination {
+    position: initial;
+    margin: 0.5em 0;
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: auto;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    display: none;
+}
+
