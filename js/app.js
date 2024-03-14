@@ -3,6 +3,7 @@ const swiper = new Swiper('.swiper', {
     spaceBetween: 10,
     slidesPerView: 1.5,
     centeredSlides: 'true',
+    loop: 'true',
 
     // If we need pagination
     pagination: {
@@ -18,6 +19,6 @@ const swiper = new Swiper('.swiper', {
 
     keyboard: {
         enabled: true,
-        onlyInViewport: false,
+        onlyInViewport: true,
     },
 });

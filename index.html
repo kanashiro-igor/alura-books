@@ -51,7 +51,7 @@
             <p class="banner__text">Find what you need for your development on our shelf!</p>
             <input type="text" class="banner__search" placeholder="What will be your next read?">
         </section> <!--end banner-->
-        <section class="latest-releases__section">
+        <section class="latest-releases">
             <h2 class="latest-releases__title">Latest Releases</h2>
             <!-- Slider main container -->
             <div class="swiper">
@@ -76,26 +76,15 @@
                         <img src="./img/acessibility.svg" alt="Book about acessibility." loading="lazy">
                         <div class="swiper-lazy-preloader"></div>
                     </div>
-                    <div class="swiper-slide">
-                        <img src="./img/agileMetrics.svg" alt="Book about Agile Metrics." loading="lazy">
-                        <div class="swiper-lazy-preloader"></div>
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="./img/angular.svg" alt="Book about Angular." loading="lazy">
-                        <div class="swiper-lazy-preloader"></div>
-                    </div>
-                    </div>
-            
+                </div> <!--end swiper-wrapper-->
                 <!-- If we need navigation buttons -->
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-button-next"></div>
             </div> <!--end swiper-->
-            <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-            <script src="./js/app.js"></script>
 
             <div class="card">
                 <div class="card__left">
-                    <h3 class="card__subtitle">You might also be interested in…</h3>
+                    <h3 class="car__subtitle">You might also be interested in…</h3>
                     <h2 class="card__title">Angular 11 and Firebase</h2>
                     <p class="card__text">Building an application integrated with the Google platform.</p>
                     <div>
@@ -107,8 +96,61 @@
                     <img src="./img/angularIcon.svg" alt="Angular logo">
                     <a href="#" class="card__button">Know more</a>
                 </div>
-            </div><!--end card-->
+            </div> <!--end card-->
         </section> <!--end latest-releases__section-->
+
+        <section class="best-sellers">
+            <h2 class="best-sellers__title">Best Sellers</h2>
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <img src="./img/angular.svg" alt="Book about Angular." loading="lazy">
+                        <div class="swiper-lazy-preloader"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/MEAN.svg" alt="Book about MEAN." loading="lazy">
+                        <div class="swiper-lazy-preloader"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/Front-endGuide.svg" alt="Book about Front-end." loading="lazy">
+                        <div class="swiper-lazy-preloader"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/construct2.svg" alt="Book about Construct 2, build your first multiplatform game." loading="lazy">
+                        <div class="swiper-lazy-preloader"></div>
+                    </div>
+                </div> <!--end swiper-wrapper-->
+            
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div> <!--end swiper-->
+            <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+            <script src="./js/app.js"></script>
+
+            <div class="card">
+                <div class="card__left">
+                    <h3 class="car__subtitle" id="author">Author Of The Month</h3>
+                    <h2 class="card__title">Juliana Agarikov</h2>
+                    <p class="card__text">System analyst and writer, Juliana is a Front-End specialist.</p>
+                    <div>
+                        <img src="./img/bookmarks.png" alt="Bookmarks logo">
+                        <img src="./img/shopping.png" alt="Shopping cart logo">
+                    </div>
+                </div> <!--end card__left-->
+                <div class="card__right">
+                    <img src="./img/profile-writer.svg" alt="Writer profile picture.">
+                    <a href="#" class="card__button">Know more</a>
+                </div>
+            </div> <!--end card-->
+            <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+            <script src="./js/app.js"></script>
+        </section> <!--end best-sellers-->
         
     </body>
 

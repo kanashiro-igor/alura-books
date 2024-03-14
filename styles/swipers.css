@@ -24,3 +24,13 @@
     display: none;
 }
 
+.best-sellers__title {
+    color: var(--titles-buttons-color);
+    font-family: var(--font);
+    font-weight: var(--font-bold);
+    text-transform: uppercase;
+    text-align: center;
+    background-color: var(--second-color);
+    padding: 1em 0 0.5em 0;
+    font-size: 18px;
+}
