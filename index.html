@@ -51,6 +51,7 @@
             <p class="banner__text">Find what you need for your development on our shelf!</p>
             <input type="text" class="banner__search" placeholder="What will be your next read?">
         </section> <!--end banner-->
+
         <section class="latest-releases">
             <h2 class="latest-releases__title">Latest Releases</h2>
             <!-- Slider main container -->
@@ -61,20 +62,16 @@
                 <div class="swiper-wrapper">
                     <!-- Slides -->
                     <div class="swiper-slide">
-                        <img src="./img/apacheKafka.svg" alt="Book about Apache Kafka and Spring Boot." loading="lazy">
-                        <div class="swiper-lazy-preloader"></div>
+                        <img src="./img/apacheKafka.svg" alt="Book about Apache Kafka and Spring Boot.">
                     </div>
                     <div class="swiper-slide">
-                        <img src="./img/leadership.svg" alt="Book about leadership in design." loading="lazy">
-                        <div class="swiper-lazy-preloader"></div>
+                        <img src="./img/leadership.svg" alt="Book about leadership in design.">
                     </div>
                     <div class="swiper-slide">
-                        <img src="./img/javascript.svg" alt="Book about Javascript." loading="lazy">
-                        <div class="swiper-lazy-preloader"></div>
+                        <img src="./img/javascript.svg" alt="Book about Javascript.">
                     </div>
                     <div class="swiper-slide">
-                        <img src="./img/acessibility.svg" alt="Book about acessibility." loading="lazy">
-                        <div class="swiper-lazy-preloader"></div>
+                        <img src="./img/acessibility.svg" alt="Book about acessibility.">
                     </div>
                 </div> <!--end swiper-wrapper-->
                 <!-- If we need navigation buttons -->
@@ -109,20 +106,16 @@
                 <div class="swiper-wrapper">
                     <!-- Slides -->
                     <div class="swiper-slide">
-                        <img src="./img/angular.svg" alt="Book about Angular." loading="lazy">
-                        <div class="swiper-lazy-preloader"></div>
+                        <img src="./img/angular.svg" alt="Book about Angular.">
                     </div>
                     <div class="swiper-slide">
-                        <img src="./img/MEAN.svg" alt="Book about MEAN." loading="lazy">
-                        <div class="swiper-lazy-preloader"></div>
+                        <img src="./img/MEAN.svg" alt="Book about MEAN.">
                     </div>
                     <div class="swiper-slide">
-                        <img src="./img/Front-endGuide.svg" alt="Book about Front-end." loading="lazy">
-                        <div class="swiper-lazy-preloader"></div>
+                        <img src="./img/Front-endGuide.svg" alt="Book about Front-end.">
                     </div>
                     <div class="swiper-slide">
-                        <img src="./img/construct2.svg" alt="Book about Construct 2, build your first multiplatform game." loading="lazy">
-                        <div class="swiper-lazy-preloader"></div>
+                        <img src="./img/construct2.svg" alt="Book about Construct 2, build your first multiplatform game.">
                     </div>
                 </div> <!--end swiper-wrapper-->
             
@@ -135,6 +128,13 @@
 
             <div class="card">
                 <div class="card__left">
+                    <div class="card-stars">
+                        <img src="./img/star.svg" alt="Image of a star.">
+                        <img src="./img/star.svg" alt="Image of a star.">
+                        <img src="./img/star.svg" alt="Image of a star.">
+                        <img src="./img/star.svg" alt="Image of a star.">
+                        <img src="./img/star.svg" alt="Image of a star.">
+                    </div>
                     <h3 class="car__subtitle" id="author">Author Of The Month</h3>
                     <h2 class="card__title">Juliana Agarikov</h2>
                     <p class="card__text">System analyst and writer, Juliana is a Front-End specialist.</p>
@@ -148,10 +148,42 @@
                     <a href="#" class="card__button">Know more</a>
                 </div>
             </div> <!--end card-->
-            <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-            <script src="./js/app.js"></script>
+                
         </section> <!--end best-sellers-->
-        
+
+        <section class="topics">
+            <h2 class="topics-title">Recently Visited Topics</h2>
+            <ul class="topics-list">
+               <li class="topics-item">
+                    <a href="#">Android</a>
+               </li>
+               <li class="topics-item">
+                    <a href="#">Digital Marketing</a>
+               </li>
+               <li class="topics-item">
+                    <a href="#">Agile</a>
+               </li>
+               <li class="topics-item">
+                    <a href="#">Startups</a>
+               </li>
+               <li class="topics-item">
+                    <a href="#">HTML & CSS</a>
+               </li>
+               <li class="topics-item">
+                    <a href="#">Python</a>
+               </li>
+               <li class="topics-item">
+                    <a href="#">OO</a>
+               </li>
+               <li class="topics-item">
+                    <a href="#">Java</a>
+               </li>
+            </ul>
+        </section>
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="./js/app.js"></script>
+
     </body>
 
 </html>

@@ -1,4 +1,4 @@
-const swiper = new Swiper('.swiper', {
+let swiper = new Swiper('.swiper', {
     // Optional parameters
     spaceBetween: 10,
     slidesPerView: 1.5,
@@ -22,3 +22,4 @@ const swiper = new Swiper('.swiper', {
         onlyInViewport: true,
     },
 });
+
