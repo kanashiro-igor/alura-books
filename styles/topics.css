@@ -1,5 +1,5 @@
 .topics {
-    background-color: var(--third-color);
+    background: var(--navbarMenu-firstFrame-lastFrame-color);
     text-align: center;
 }
 
