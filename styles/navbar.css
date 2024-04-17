@@ -99,3 +99,52 @@
     background-position: 1em;
     color: var(--second-color);
 }
+
+.alurabooks-title {
+    display: none;
+}
+
+.tabletview-navbar {
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+
+    .alurabooks-title, .alurabooks-title--bold {
+        font-size: 1.875rem;
+        font-family: "Josefin Sans", sans-serif;
+        font-weight: 500;
+        display: flex;
+    }
+
+    .alurabooks-title--bold {
+        font-weight: 700;
+    }
+
+    .tabletview-navbar {
+        display: flex;
+        margin-left: 3rem;
+    }
+
+    .tabletview-navbar li {
+        padding: 0 1em;
+    }
+
+    .tabletview-navbar-link {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: black;
+    }
+
+    .bookmark {
+        display: none;
+    }
+
+    .navbar__menu {
+        display: none;
+    }
+
+    .navbar {
+        justify-content: space-around;
+    }
+}
