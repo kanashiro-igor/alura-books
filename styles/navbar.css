@@ -38,7 +38,7 @@
     display: none;
     position: absolute;
     top: 100%;
-    width: 60vw;
+    width: auto;
 }
 
 .list__title {
@@ -48,7 +48,7 @@
 }
 
 .list__title, .list__item {
-    padding: 1em;
+    padding: 0.5em;
     background-color: var(--second-color);
 }
 
@@ -126,14 +126,11 @@
         margin-left: 3rem;
     }
 
-    .tabletview-navbar li {
-        padding: 0 1em;
-    }
-
     .tabletview-navbar-link {
         text-decoration: none;
         text-transform: uppercase;
         color: black;
+        padding: 0 1em;
     }
 
     .bookmark {
@@ -146,5 +143,14 @@
 
     .navbar {
         justify-content: space-around;
+    }
+
+    .options__menu:checked ~ .menu__list {
+        display: block;
+        width: auto;
+    }
+
+    .options__menu {
+        display: none;
     }
 }
