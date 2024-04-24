@@ -36,3 +36,21 @@
     font-size: 0.875rem;
     font-weight: var(--font-bold);;
 }
+
+@media screen and (min-width: 1024px) {
+
+    .topics-list {
+        padding: 1rem 2rem;
+        width: auto;
+        gap: 1rem;
+    }
+
+    .topics-title {
+        font-size: 1.5rem;
+        padding: 2rem 0 1rem;
+    }
+
+    .topics-item a {
+        font-size: 1.5rem;
+    }
+}

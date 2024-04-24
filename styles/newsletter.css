@@ -50,3 +50,31 @@ hr {
     background-color: #F9F9F9;
     padding: 2rem 1rem;
 }
+
+@media screen and (min-width: 1024px) {
+
+    .newsletter-title {
+        font-size: 1.5rem;
+    }
+
+    .newsletter {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 2rem;
+        padding: 2rem;
+    }
+
+    .newsletter-content {
+        width: 30%;
+    }
+
+    .newsletter-email {
+        width: 30%;
+        height: 30%;
+    }
+
+    .newsletter-email::placeholder {
+        background-size: 12%;
+    }
+}
